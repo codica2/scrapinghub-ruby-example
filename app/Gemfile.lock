@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ethon (0.12.0)
+      ffi (>= 1.3.0)
+    ffi (1.10.0)
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.2)
+      mini_portile2 (~> 2.4.0)
+    typhoeus (1.3.1)
+      ethon (>= 0.9.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri
+  typhoeus
+
+BUNDLED WITH
+   1.16.4

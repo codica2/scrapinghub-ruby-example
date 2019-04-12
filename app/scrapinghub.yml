@@ -1,0 +1,7 @@
+projects:
+  c-spider:
+    id: YOUR_PROJECT_ID
+    image: images.scrapinghub.com/project/YOUR_PROJECT_ID
+
+version: spider-1
+apikey: YOUR_API_KEY
