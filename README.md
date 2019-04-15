@@ -14,7 +14,7 @@
 
 > NOTE: make sure you meet the website rules before scraping it.
 
-Let's imagine that we want to get a list of articles from the [codica](https://www.codica.com/blog/) site. I'll use [typhoeus](https://github.com/typhoeus/typhoeus) for HTTP requests and [nokogiri](https://github.com/sparklemotion/nokogiri) as HTML parser.
+Let's imagine that we want to get a list of articles from the [Сodica](https://www.codica.com/blog/) website. I'll use [typhoeus](https://github.com/typhoeus/typhoeus) for HTTP requests and [nokogiri](https://github.com/sparklemotion/nokogiri) as HTML parser.
 
 `app/crawler.rb`
 
@@ -57,7 +57,7 @@ end
 ...
 ```
 
-Here we set up where to write results. Scrapinghub provides a `SHUB_FIFO_PATH` ENV variable to store items on the site, locally you can pass a filename to this ENV variable to write on a disk.
+Here we set up where to write results. Scrapinghub provides a `SHUB_FIFO_PATH` ENV variable to store items on the website. You can locally pass a filename to this ENV variable to write on a disk.
 
 ```bash
 $> ruby app/crawler.rb
@@ -88,7 +88,7 @@ Just change `c-spider` name to your own.
 
 ## Step three: make required files executable
 
-Add `#!/usr/bin/env ruby` to `app/shub-image-info.rb` and `app/crawler.rb`. It makes these files executable.
+Add `#!/usr/bin/env ruby` to both `app/shub-image-info.rb` and `app/crawler.rb`. It makes these files executable.
 
 ## Step four: create Dockerfile
 
@@ -115,7 +115,7 @@ It's a basic Dockerfile. We install a project and point our files to files that 
 
 ## Step five: deploy and start your spider
 
-After you installed and logged in shub you need to create a project on the scrapinghub.
+After you installed and logged in to shub, you need to create a project on the scrapinghub.
 
 ![](images/create-project-step-1.png)
 ![](images/create-project-step-2.png)
